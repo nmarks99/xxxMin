@@ -21,6 +21,7 @@ PROD_IOC = $(PROD_NAME)
 # defined in RELEASE
 ##################################################################
 DBD_SUFFIX_Linux = Linux
+DBD_SUFFIX_WIN32 = Win$(if $(findstring 32, $(T_A)),32,64)
 DBD_NAME = $(DBD_PREFIX)$(DBD_SUFFIX_$(OS_CLASS))
 
 DBD  += $(DBD_NAME).dbd
