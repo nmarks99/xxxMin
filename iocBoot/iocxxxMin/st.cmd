@@ -1,7 +1,7 @@
 # ../../bin/${EPICS_HOST_ARCH}/xxxMin st.cmd
 < envPaths
 
-epicsEnvSet("PREFIX", "xxxMin:")
+< settings.iocsh
 
 dbLoadDatabase("../../dbd/iocxxxMinLinux.dbd")
 iocxxxMinLinux_registerRecordDeviceDriver(pdbbase)
