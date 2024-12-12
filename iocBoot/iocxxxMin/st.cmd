@@ -1,10 +1,10 @@
 # ../../bin/${EPICS_HOST_ARCH}/xxxMin st.cmd
 < envPaths
 
-< settings.iocsh
-
 dbLoadDatabase("../../dbd/iocxxxMinLinux.dbd")
 iocxxxMinLinux_registerRecordDeviceDriver(pdbbase)
+
+< settings.iocsh
 
 ###############################################################################
 iocInit
