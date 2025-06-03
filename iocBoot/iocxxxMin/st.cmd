@@ -4,7 +4,8 @@
 dbLoadDatabase("../../dbd/iocxxxMinLinux.dbd")
 iocxxxMinLinux_registerRecordDeviceDriver(pdbbase)
 
-< settings.iocsh
+epicsEnvSet("IOCSH_PS1", "$(IOC)>")
+epicsEnvSet("PREFIX", "xxxMin:")
 
 ###############################################################################
 iocInit
